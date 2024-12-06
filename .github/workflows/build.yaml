@@ -20,7 +20,7 @@ jobs:
     - name: Compile, build and push
       run: |
         #### AUFGABE COMPILE, DOCKER BUILD UND PUSH
-          # hier ist Platz für maven package und docker build
+         
           mvn package && docker build -t ghcr.io/knobelfix/pet-clinic:latest -f Dockerfile .
           echo Marven und Docker Build ausgefuert
           docker login --username knobelfix --password $GITHUB_ACCESSTOKEN ghcr.io
